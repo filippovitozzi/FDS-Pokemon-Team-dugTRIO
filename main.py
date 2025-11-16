@@ -181,6 +181,6 @@ xgboost_clf.best_xgb_report(X_train_xgb, y_train_xgb, X_valid, y_valid)
 xgboost_clf.final_fit(X_train,y_train)
 
 print("------------XGBOOST BEST ESTIMATOR PERFORMANCE------------")
-print(xgboost_clf.get_performance_metrics())
+print(xgboost_clf.get_performance_metrics(X_train,y_train))
 
 xgboost_clf.generate_submission(X_test, test_features)
