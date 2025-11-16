@@ -6,7 +6,7 @@ from helpers import get_pokemon_stats, get_all_statuses
 from features import build_features
 from models.ensemble import Ensemble
 
-RANDOM_SEED = 42
+RANDOM_SEED = 66
 
 for dirname, _, filenames in os.walk('kaggle/input'):
     for filename in filenames:
